@@ -1,0 +1,1122 @@
+/*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+/* line 8, ../sass/partials/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 18, ../sass/partials/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+/* line 31, ../sass/partials/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 50, ../sass/partials/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 61, ../sass/partials/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 70, ../sass/partials/_normalize.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+/* line 79, ../sass/partials/_normalize.scss */
+template,
+[hidden] {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+/* line 91, ../sass/partials/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+/* line 100, ../sass/partials/_normalize.scss */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 113, ../sass/partials/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 123, ../sass/partials/_normalize.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 132, ../sass/partials/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 141, ../sass/partials/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 150, ../sass/partials/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 159, ../sass/partials/_normalize.scss */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 168, ../sass/partials/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 177, ../sass/partials/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 185, ../sass/partials/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 189, ../sass/partials/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 200, ../sass/partials/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 208, ../sass/partials/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 220, ../sass/partials/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 232, ../sass/partials/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 241, ../sass/partials/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Change font properties to `inherit` in all browsers (opinionated).
+ */
+/* line 254, ../sass/partials/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+/* line 265, ../sass/partials/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ * 2. Show the overflow in Edge, Firefox, and IE.
+ */
+/* line 275, ../sass/partials/_normalize.scss */
+button,
+input,
+select {
+  /* 2 */
+  overflow: visible;
+}
+
+/**
+ * Remove the margin in Safari.
+ * 1. Remove the margin in Firefox and Safari.
+ */
+/* line 286, ../sass/partials/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  /* 1 */
+  margin: 0;
+}
+
+/**
+ * Remove the inheritence of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritence of text transform in Firefox.
+ */
+/* line 298, ../sass/partials/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Change the cursor in all browsers (opinionated).
+ */
+/* line 307, ../sass/partials/_normalize.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+}
+
+/**
+ * Restore the default cursor to disabled elements unset by the previous rule.
+ */
+/* line 318, ../sass/partials/_normalize.scss */
+[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS.
+ */
+/* line 328, ../sass/partials/_normalize.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 339, ../sass/partials/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 349, ../sass/partials/_normalize.scss */
+button:-moz-focusring,
+input:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+/* line 358, ../sass/partials/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 371, ../sass/partials/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 384, ../sass/partials/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 393, ../sass/partials/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 403, ../sass/partials/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the odd appearance of search inputs in Chrome and Safari.
+ */
+/* line 412, ../sass/partials/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome on OS X and
+ * Safari on OS X.
+ */
+/* line 421, ../sass/partials/_normalize.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+@font-face {
+  font-family: "Play";
+  src: url('../fonts/../fonts/PlayfairDisplay-Regular.ttf?1390882820') format('truetype');
+}
+@font-face {
+  font-family: "Adam";
+  src: url('../fonts/../fonts/Adam.otf?1398027792') format('opentype');
+}
+/* line 1, ../sass/partials/_base.scss */
+body {
+  font-family: Play;
+  font-size: 1em;
+  line-height: 1em;
+  background: #f4f4f4;
+  color: #000000;
+}
+
+/* line 10, ../sass/partials/_base.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 15, ../sass/partials/_base.scss */
+section {
+  clear: both;
+}
+
+/* line 7, ../sass/styles.scss */
+.sec {
+  width: 100vw;
+  height: auto;
+  max-width: 100%;
+}
+
+/* line 13, ../sass/styles.scss */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 19, ../sass/styles.scss */
+.active {
+  background-color: #1e90ff;
+}
+
+/* line 23, ../sass/styles.scss */
+.cool-image {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  background: url(http://desktopbackgrounds4u.com/wp-content/gallery/office-background-images/Office_Desk_Background_by_ChocoTemplates.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 31, ../sass/styles.scss */
+.cool-image ul {
+  margin: 0;
+  padding: 0;
+  float: right;
+  list-style: none;
+  width: 130px;
+  font-family: Adam;
+}
+/* line 38, ../sass/styles.scss */
+.cool-image ul li {
+  color: #1e90ff;
+  cursor: pointer;
+  font-style: italic;
+  text-decoration: none;
+  padding-top: 20px;
+}
+/* line 44, ../sass/styles.scss */
+.cool-image ul li a {
+  text-decoration: none;
+  color: transparent;
+  display: block;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 5px #fff;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 56, ../sass/styles.scss */
+.cool-image ul li a:hover {
+  color: #FFFFFF;
+  text-shadow: 0px 0px 1px #fff;
+  padding-left: 20px;
+}
+/* line 64, ../sass/styles.scss */
+.cool-image h1 {
+  margin: 0;
+  text-align: center;
+  font-style: italic;
+  font-size: 50pt;
+  color: #FFFFFF;
+}
+/* line 71, ../sass/styles.scss */
+.cool-image h2 {
+  margin: 0;
+  text-align: center;
+  font-style: italic;
+  color: #FFFFFF;
+}
+/* line 77, ../sass/styles.scss */
+.cool-image .main-title {
+  position: absolute;
+  top: 35%;
+  left: 32%;
+  line-height: initial;
+}
+
+/* line 85, ../sass/styles.scss */
+.title {
+  border-top: 1px solid #000000;
+}
+/* line 87, ../sass/styles.scss */
+.title h2 {
+  text-align: center;
+  font-size: 30pt;
+  color: #808080;
+}
+
+/* line 94, ../sass/styles.scss */
+.my-experience {
+  background-color: #FFFFFF;
+  height: auto;
+  color: #FFFFFF;
+}
+/* line 98, ../sass/styles.scss */
+.my-experience h4 {
+  font-size: 20pt;
+  margin-bottom: 1em;
+}
+/* line 102, ../sass/styles.scss */
+.my-experience .experience-details {
+  position: relative;
+  padding-bottom: 300px;
+  /*border: 1px solid $black;*/
+}
+/* line 106, ../sass/styles.scss */
+.my-experience .experience-details .experience-title {
+  position: absolute;
+  display: inline-block;
+}
+/* line 109, ../sass/styles.scss */
+.my-experience .experience-details .experience-title h5 {
+  font-size: 18pt;
+  font-weight: 900;
+  margin: 0;
+}
+/* line 114, ../sass/styles.scss */
+.my-experience .experience-details .experience-title p {
+  font-size: 8pt;
+  margin: 0;
+}
+/* line 119, ../sass/styles.scss */
+.my-experience .experience-details .experience-text {
+  width: 65%;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+/* line 124, ../sass/styles.scss */
+.my-experience .experience-details .experience-text p {
+  line-height: 1.4em;
+  font-size: 14pt;
+  margin: 0;
+}
+/* line 131, ../sass/styles.scss */
+.my-experience .work {
+  padding-top: 115px;
+}
+
+/* line 137, ../sass/styles.scss */
+.myProjects-details ul {
+  list-style: none;
+  line-height: 0em;
+  padding: 0;
+}
+/* line 141, ../sass/styles.scss */
+.myProjects-details ul li {
+  width: 49%;
+  height: 100%;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+/* line 147, ../sass/styles.scss */
+.myProjects-details ul li:hover {
+  background-color: #1e90ff;
+}
+/* line 151, ../sass/styles.scss */
+.myProjects-details ul .proj-wrapper {
+  font-family: Adam;
+  font-style: italic;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.4s, opacity 0.4s;
+      /*&:nth-child(odd){
+margin-right:7px;
+}*/
+}
+/* line 158, ../sass/styles.scss */
+.myProjects-details ul .proj-wrapper:hover {
+  transform: translateY(0px) translateX(5px) scale(0.9);
+  -ms-transform: translateY(0px) translateX(5px) scale(0.9);
+  -webkit-transform: translateY(0px) translateX(5px) scale(0.9);
+  z-index: 10;
+  transition: transform 0.4s;
+}
+/* line 165, ../sass/styles.scss */
+.myProjects-details ul .proj-wrapper .caption {
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  text-align: center;
+  position: absolute;
+}
+/* line 173, ../sass/styles.scss */
+.myProjects-details ul .proj-wrapper .caption:hover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.5s ease-in-out;
+}
+/* line 178, ../sass/styles.scss */
+.myProjects-details ul .proj-wrapper .caption h5 {
+  font-size: 1.8em;
+  line-height: 2.5em;
+}
+/* line 186, ../sass/styles.scss */
+.myProjects-details ul .proj-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 195, ../sass/styles.scss */
+.about-me .my-image {
+  padding-top: 50px;
+  text-align: center;
+}
+/* line 198, ../sass/styles.scss */
+.about-me .my-image span {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/nick.jpg");
+  background-position: 50% 10%;
+  webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #1e90ff;
+  margin-bottom: -3px;
+}
+/* line 210, ../sass/styles.scss */
+.about-me .my-image canvas {
+  height: 200px;
+  width: 200px;
+  display: inherit;
+  margin: 0 auto;
+}
+/* line 217, ../sass/styles.scss */
+.about-me .about-me-text {
+  margin: 0 auto;
+  line-height: 1.5em;
+  width: 45%;
+  font-size: 14pt;
+  color: #000000;
+  padding-top: 50px;
+}
+
+  /*
+.about-me-container{
+  display: table;
+  padding-top: 47px;
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+  .my-image{
+    position: relative;
+    float:left;
+    display: inline-block;
+    width: 50%;
+    height: auto;
+    background-color: green;
+    img{
+      width: 100%;
+      height: 45vh;  
+    }
+    .overlay{
+      position: absolute;
+      top: 0;
+      bottom:0;
+      left: 0;
+      right: 0;
+      color: red;m
+      background: rgba(111, 211, 143, 0.8);
+    }
+  }
+  .my-description{
+    float:left;
+    display: inline-block;
+    width: 50%;
+    height: 45vh;
+    background-color: red;
+    padding-top: 2%;
+  }
+}*/
+/* line 265, ../sass/styles.scss */
+.skills-nav ul {
+  text-align: center;
+  list-style: none;
+  font-size: 20pt;
+}
+/* line 269, ../sass/styles.scss */
+.skills-nav ul li {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 10px;
+}
+/* line 273, ../sass/styles.scss */
+.skills-nav ul li a {
+  text-decoration: none;
+  position: relative;
+  margin: 0 1em;
+  /*padding: 0.75em 0;*/
+  text-align: center;
+  color: #B2BEB5;
+  font-style: italic;
+  transition: color 0.3s;
+}
+/* line 285, ../sass/styles.scss */
+.skills-nav #skills-container {
+  text-align: center;
+  margin: 50px 0;
+}
+/* line 288, ../sass/styles.scss */
+.skills-nav #skills-container .skills-item-container {
+  display: inline-block;
+  margin-right: 19%;
+  text-align: center;
+  margin-bottom: 40px;
+  /*.knowledge-item{
+    display: inline-block;
+    img{                                                ar mushaobs??????????????????????????????????????????????????????????????????????????????????
+      display: inline-block;
+    }
+    p{
+      display: inline-block;
+    }
+  }*/
+}
+/* line 293, ../sass/styles.scss */
+.skills-nav #skills-container .skills-item-container:nth-child(4n+0) {
+  margin: 0;
+}
+/* line 296, ../sass/styles.scss */
+.skills-nav #skills-container .skills-item-container .skills-title {
+  font-size: 1.2em;
+}
+
+/* line 312, ../sass/styles.scss */
+footer {
+  width: 100%;
+  height: auto;
+  background-color: green;
+  border-top: 5px solid purple;
+}
+/* line 317, ../sass/styles.scss */
+footer .title {
+  border: 0;
+}
+/* line 320, ../sass/styles.scss */
+footer .social {
+  width: 333px;
+  height: auto;
+  margin: 0 auto;
+}
+/* line 324, ../sass/styles.scss */
+footer .social a {
+  padding-right: 15px;
+}
+/* line 326, ../sass/styles.scss */
+footer .social a:first-child {
+  margin-left: 25px;
+}
+/* line 330, ../sass/styles.scss */
+footer .social img:last-child {
+  border-radius: 50%;
+}
+
+/*pie chart*/
+/* line 337, ../sass/styles.scss */
+.pie {
+  display: inline-block;
+  position: relative;
+  width: 1em;
+  height: 1em;
+  background-color: #2f3e46;
+  font-size: 7em;
+  text-align: center;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 348, ../sass/styles.scss */
+.slice-right {
+  opacity: 0;
+  position: absolute;
+  z-index: 11;
+  background-color: #1e90ff;
+  width: 100%;
+  height: 100%;
+  clip: rect(0, 0.5em, 0.5em, 0.5em);
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 359, ../sass/styles.scss */
+.slice-left {
+  opacity: 0;
+  position: absolute;
+  z-index: 11;
+  background-color: #1e90ff;
+  width: 100%;
+  height: 100%;
+  clip: rect(0.5em, 0.5em, 1em, 0.5em);
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 370, ../sass/styles.scss */
+.percent {
+  font-family: Adam;
+  position: absolute;
+  z-index: 20;
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  left: 3px;
+  background: #1d2225;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 382, ../sass/styles.scss */
+.number {
+  position: absolute;
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+  padding-top: 46%;
+  line-height: 0;
+  font-size: .35em;
+  color: #485c65;
+}
+
+/* line 394, ../sass/styles.scss */
+.time-right {
+  opacity: 1;
+  -webkit-animation-delay: 1.2s;
+  -webkit-animation-duration: 0.3s;
+  -webkit-animation-name: right-slice;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 1.2s;
+  -moz-animation-duration: 0.3s;
+  -moz-animation-name: right-slice;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-fill-mode: forwards;
+}
+
+/* line 408, ../sass/styles.scss */
+.time-left {
+  opacity: 1;
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-duration: 0.3s;
+  /*-webkit-animation-name: left-slice;*/
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 1.5s;
+  -moz-animation-duration: 0.3s;
+  /*-moz-animation-name: left-slice;*/
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes right-slice {
+  from {
+    clip: rect(0, 50%, 0.5em, 0.5em);
+  }
+  50% {
+    clip: rect(0, 1em, 0.5em, 0.5em);
+  }
+  to {
+    clip: rect(0, 1em, 1em, 0.5em);
+  }
+}
+@-moz-keyframes right-slice {
+  from {
+    clip: rect(0, 50%, 0.5em, 0.5em);
+  }
+  50% {
+    clip: rect(0, 1em, 0.5em, 0.5em);
+  }
+  to {
+    clip: rect(0, 1em, 1em, 0.5em);
+  }
+}
+@-webkit-keyframes left-slice100 {
+  from {
+    clip: rect(0.5em, 0.5em, 1em, 0.5em);
+  }
+  50% {
+    clip: rect(0.5em, 0.5em, 1em, 0);
+  }
+  to {
+    clip: rect(0em, 0.5em, 1em, 0);
+  }
+}
+@-moz-keyframes left-slice100 {
+  from {
+    clip: rect(0.5em, 0.5em, 1em, 0.5em);
+  }
+  50% {
+    clip: rect(0.5em, 0.5em, 1em, 0);
+  }
+  to {
+    clip: rect(0em, 0.5em, 1em, 0);
+  }
+}
+@-webkit-keyframes left-slice90 {
+  from {
+    clip: rect(0.5em, 0.5em, 1em, 0.5em);
+  }
+  50% {
+    clip: rect(0.5em, 0.5em, 1em, 0.1em);
+  }
+  to {
+    clip: rect(0.05em, 0.5em, 1em, 0);
+  }
+}
+@-moz-keyframes left-slice90 {
+  from {
+    clip: rect(0.5em, 0.5em, 1em, 0.5em);
+  }
+  50% {
+    clip: rect(0.5em, 0.5em, 1em, 0.1em);
+  }
+  to {
+    clip: rect(0.05em, 0.5em, 1em, 0);
+  }
+}
+@-webkit-keyframes left-slice80 {
+  from {
+    clip: rect(0.5em, 0.5em, 1em, 0.5em);
+  }
+  50% {
+    clip: rect(0.5em, 0.5em, 1em, 0.1em);
+  }
+  to {
+    clip: rect(0.22em, 0.5em, 1em, 0);
+  }
+}
+@-moz-keyframes left-slice80 {
+  from {
+    clip: rect(0.5em, 0.5em, 1em, 0.5em);
+  }
+  50% {
+    clip: rect(0.5em, 0.5em, 1em, 0.1em);
+  }
+  to {
+    clip: rect(0.22em, 0.5em, 1em, 0);
+  }
+}
+@-webkit-keyframes left-slice70 {
+  from {
+    clip: rect(0.5em, 0.5em, 1em, 0.5em);
+  }
+  50% {
+    clip: rect(0.5em, 0.5em, 1em, 0.1em);
+  }
+  to {
+    clip: rect(0.6em, 0.5em, 1em, 0);
+  }
+}
+@-moz-keyframes left-slice70 {
+  from {
+    clip: rect(0.5em, 0.5em, 1em, 0.5em);
+  }
+  50% {
+    clip: rect(0.5em, 0.5em, 1em, 0.1em);
+  }
+  to {
+    clip: rect(0.6em, 0.5em, 1em, 0);
+  }
+}
+@-webkit-keyframes left-slice60 {
+  from {
+    clip: rect(0.5em, 0.5em, 1em, 0.5em);
+  }
+  50% {
+    clip: rect(0.5em, 0.5em, 1em, 0.1em);
+  }
+  to {
+    clip: rect(0.9em, 0.5em, 1em, 0);
+  }
+}
+@-moz-keyframes left-slice60 {
+  from {
+    clip: rect(0.5em, 0.5em, 1em, 0.5em);
+  }
+  50% {
+    clip: rect(0.5em, 0.5em, 1em, 0.1em);
+  }
+  to {
+    clip: rect(0.9em, 0.5em, 1em, 0);
+  }
+}
+@-webkit-keyframes left-slice50 {
+  from {
+    clip: rect(0.5em, 0.5em, 1em, 0.5em);
+  }
+  50% {
+    clip: rect(0, 0, 0, 0);
+  }
+  to {
+    clip: rect(1em, 0.5em, 1em, 0);
+  }
+}
+@-moz-keyframes left-slice50 {
+  from {
+    clip: rect(0.5em, 0.5em, 1em, 0.5em);
+  }
+  50% {
+    clip: rect(0, 0, 0, 0);
+  }
+  to {
+    clip: rect(1em, 0.5em, 1em, 0);
+  }
+}
+@-webkit-keyframes right-slice20 {
+  from {
+    clip: rect(0, 50%, 0.5em, 0.5em);
+  }
+  50% {
+    clip: rect(0, 1em, 0 0.26em, 0.5em);
+  }
+  to {
+    clip: rect(0, 1em, 0.26em, 0.5em);
+  }
+}
+@-moz-keyframes right-slice20 {
+  from {
+    clip: rect(0, 50%, 0.5em, 0.5em);
+  }
+  50% {
+    clip: rect(0, 1em, 0 0.26em, 0.5em);
+  }
+  to {
+    clip: rect(0, 1em, 0.26em, 0.5em);
+  }
+}
