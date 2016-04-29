@@ -1,10 +1,8 @@
 body {
   font-family: Play;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 1em;
   background: #f4f4f4;
-  // We are defining the text color with a mixin
-  @include default-text-color($black);
 }
 
 * {
@@ -14,4 +12,5 @@ body {
 }
 section{
 	clear:both;
+  border-top:1px solid #1e90ff;
 }

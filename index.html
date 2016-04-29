@@ -2,18 +2,25 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Nick Svanidze</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
+    <title>Nick Svanidze Personal Page</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
 </head>
 
 <body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
     <div class='cool-image '>
         <header>
             <nav class="menu">
                 <ul>
-                    <li><a href="#my-projects">Projects</a></li>
                     <li><a href="#my-skills">Skills</a></li>
+                    <li><a href="#my-projects">Projects</a></li>
                     <li><a href="#about-me">About Me</a></li>
                     <li><a href="#contact-me">Contact</a></li>
                 </ul>
@@ -24,51 +31,6 @@
             <h2>Front-end Developer</h2>
         </div>
     </div>
-    <!-- <section class='my-experience sec'>
-         <div class='title'>
-            <h2>My Experince</h2>
-         </div>
-         <div class='container'>
-            <div class="experience-details">
-               <h4>Education</h4>
-               <div class="experience-title">
-                  <h5>Tbilisi State University</h5>
-                  <p>Sep, 2010 - June, 2015</p>
-               </div>
-               <div class="experience-text">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-               </div>
-            </div>
-            <div class="experience-details">
-               <div class="experience-title">
-                  <h5>School Number 41</h5>
-                  <p>Sep, 2010 - June, 2015</p>
-               </div>
-               <div class="experience-text">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-               </div>
-            </div>
-            <div class="experience-details" style="margin-bottom: 65px;">
-               <div class="experience-title">
-                  <h4>Work</h4>
-                  <h5>Freelancer at upWork</h5>
-                  <p>Sep, 2010 - June, 2015</p>
-               </div>
-               <div class="experience-text work">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-               </div>
-            </div>
-            <div class="experience-details">
-               <div class="experience-title">
-                  <h5>Tbilisi State University</h5>
-                  <p>March, 2013 - June, 2015</p>
-               </div>
-               <div class="experience-text">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-               </div>
-            </div>
-         </div>
-      </section> -->
     <section class="my-skills" id="my-skills">
         <div class="title">
             <h2>My Skills</h2>
@@ -76,107 +38,76 @@
         <div class="container">
             <div class="skills-nav">
                 <ul>
-                    <li class='active'><a href="index.html" >Coding</a></li><li><a href="design.html">Design</a></li><li><a href="language.html">Languages</a></li><li><a href="knowledge.html">Other...</a></li>
+                    <li class='active'><a href="index.html">Coding</a></li>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="language.html">Languages</a></li>
                 </ul>
                 <div id='skills-wrapper'>
                     <div id="skills-container">
-                        <div class="skills-item-container">
-                            <div class='skills-title'>
-                                <h6>HTML5</h6>
-                            </div>
-                            <div class="pie">
-                                <div class="slice-right time-right "></div>
-                                <div class="slice-left "></div>
-                                <div class="percent">
-                                    <div class="number">100%</div>
+                        <div class="skill-item-container">
+                            <div class="item-title">HTML5</div>
+                            <div class="item-score-background">
+                                <div class="item-score ten">
+                                    <span>100%</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="skills-item-container">
-                            <div class='skills-title'>
-                                <h6>CSS3<br>(Bootstrap)</h6>
-                            </div>
-                            <div class="pie">
-                                <div class="slice-right time-right "></div>
-                                <div class="slice-left  "></div>
-                                <div class="percent">
-                                    <div class="number">100%</div>
+                        <div class="skill-item-container">
+                            <div class="item-title">CSS3</div>
+                            <div class="item-score-background">
+                                <div class="item-score ten">
+                                    <span>100%</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="skills-item-container">
-                            <div class='skills-title'>
-                                <h6>Javascript<br>(JQuery)</h6>
-                            </div>
-                            <div class="pie">
-                                <div class="slice-right time-right "></div>
-                                <div class="slice-left "></div>
-                                <div class="percent">
-                                    <div class="number">90%</div>
+                        <div class="skill-item-container">
+                            <div class="item-title">Javascript</div>
+                            <div class="item-score-background">
+                                <div class="item-score nine">
+                                    <span>90%</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="skills-item-container">
-                            <div class='skills-title'>
-                                <h6>Ajax & JSON</h6>
-                            </div>
-                            <div class="pie">
-                                <div class="slice-right time-right "></div>
-                                <div class="slice-left "></div>
-                                <div class="percent">
-                                    <div class="number">90%</div>
+                        <div class="skill-item-container">
+                            <div class="item-title">AJAX &amp JSON</div>
+                            <div class="item-score-background">
+                                <div class="item-score nine">
+                                    <span>90%</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="skills-item-container">
-                            <div class='skills-title'>
-                                <h6>AngularJS</h6>
-                            </div>
-                            <div class="pie">
-                                <div class="slice-right time-right "></div>
-                                <div class="slice-left "></div>
-                                <div class="percent">
-                                    <div class="number">60%</div>
+                        <div class="skill-item-container">
+                            <div class="item-title">AngularJS</div>
+                            <div class="item-score-background">
+                                <div class="item-score six">
+                                    <span>60%</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="skills-item-container">
-                            <div class='skills-title'>
-                                <h6>Node.js</h6>
-                            </div>
-                            <div class="pie">
-                                <div class="slice-right time-right "></div>
-                                <div class="slice-left time-left "></div>
-                                <div class="percent">
-                                    <div class="number">60%</div>
+                        <div class="skill-item-container">
+                            <div class="item-title">Node.js</div>
+                            <div class="item-score-background">
+                                <div class="item-score six">
+                                    <span>60%</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="skills-item-container">
-                            <div class='skills-title'>
-                                <h6>ExpressJS</h6>
-                            </div>
-                            <div class="pie">
-                                <div class="slice-right time-right "></div>
-                                <div class="slice-left time-left "></div>
-                                <div class="percent">
-                                    <div class="number">50%</div>
+                        <div class="skill-item-container">
+                            <div class="item-title">ExperssJS</div>
+                            <div class="item-score-background">
+                                <div class="item-score five">
+                                    <span>50%</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="skills-item-container">
-                            <div class='skills-title'>
-                                <h6>ReactJS</h6>
-                            </div>
-                            <div class="pie">
-                                <div class="slice-right time-right "></div>
-                                <div class="slice-left time-left "></div>
-                                <div class="percent">
-                                    <div class="number">50%</div>
+                        <div class="skill-item-container">
+                            <div class="item-title">ReactJS</div>
+                            <div class="item-score-background">
+                                <div class="item-score five">
+                                    <span>50%</span>
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -191,45 +122,49 @@
                 <ul>
                     <li>
                         <div class="proj-wrapper">
-                            <a href="https://www.chessable.com" target='_blank'><img src="images/chessable.png" alt="chessable"> </a>
+                            <a href="https://www.chessable.com" target='_blank'><img src="images/chessable.png" alt="chessable"> 
                             <div class="caption">
                                 <h5>Project: Chessable <br>Position:Front-end Developer</h5>
                             </div>
+                            </a>
                         </div>
                     </li>
                     <li>
                         <div class="proj-wrapper">
-                            <a href="http://spaceboard.eu" target='_blank'><img src="images/weatherTreasure.png" alt="Spaceboard"> </a>
+                            <a href="http://weathertreasure.herokuapp.com" target='_blank'><img src="images/weatherTreasure.png" alt="Spaceboard"> 
                             <div class="caption">
                                 <h5>Project: weathertreasure <br>Position: Developer</h5>
                             </div>
+                            </a>
                         </div>
                     </li>
                     <li>
                         <div class="proj-wrapper">
-                            <a href="http://weathertreasure.herokuapp.com" target='_blank'><img src="images/spaceboard.png" alt="WeatherTreasure"> </a>
+                            <a href="http://spaceboard.eu" target='_blank'><img src="images/spaceboard.png" alt="WeatherTreasure"> 
                             <div class="caption">
                                 <h5>Project: Spaceboard <br>Position:Front-end Developer</h5>
                             </div>
+                            </a>
                         </div>
                     </li>
                     <li>
                         <div class="proj-wrapper">
-                            <a href="http://nikasv.esy.es" target='_blank'><img src="images/secretDiary.png" alt="Diary"> </a>
+                            <a href="http://nikasv.esy.es" target='_blank'><img src="images/secretDiary.png" alt="Diary"> 
                             <div class="caption">
-                                <h5>Project: nikasv.esy.es <br>Position:Full-ste Developer</h5>
+                                <h5>Project: nikasv.esy.es <br>Position:Back-end Developer</h5>
                             </div>
+                            </a>
                         </div>
                     </li>
                     <li>
                         <div class="proj-wrapper">
-                            <a href="" target='_blank'><img src="images/ide.png" alt="Integrated Development Environment"> </a>
+                            <a href="http://nikasvan.github.io/IDE/" target='_blank'><img src="images/ide.png" alt="Integrated Development Environment"> 
                             <div class="caption">
                                 <h5>Project: IDE <br>Position:Javascript Developer</h5>
                             </div>
+                            </a>
                         </div>
                     </li>
-                    <!-- <li><img src="images/" alt=""></li> -->
                 </ul>
             </div>
         </div>
@@ -244,24 +179,10 @@
                 <canvas id="my-body">Unfortunately my charming body can not be displayed at this moment because, your browser doesn't support canvas</canvas>
             </div>
             <div class="about-me-text">
-                <p>a sdkj hasjkhdkjahdjk ahd hajskdh ajkshd asd as asd asd asd asd asd asd as das dad a sdkj hasjkhdkjahdjk ahd hajskdh ajkshd asd as asd asd asd asd asd asd as das dad a sdkj hasjkhdkjahdjk and if you are wondering yes that is my actual body</p>
+                <p>Hi, Nick here, I am a Web Developer from Georgia. I have three years of experience in Web Development. Ready to work with creative, enthusiastic and visionary people. Love technology, Playing basketball &amp tennis, watching movies and reading. Currently on weight gain diet(that body needs some muscle).</p>
             </div>
         </div>
     </section>
-    <!-- <section class="about-me">
-         <div class="title">
-            <h2>About Me</h2>
-         </div>
-         <div class="about-me-container">
-            <div class="my-image" >
-               <img src="images/myImage1.jpg" alt="">
-               <div class="overlay"></div>
-            </div>
-            <div class="my-description">
-                <p>123456789a sdkj hasjkhdkjahdjk ahd hajskdh ajkshd asd as asd asd asd asd asd asd as das dad a sdkj hasjkhdkjahdjk ahd hajskdh ajkshd asd as asd asd asd asd asd asd as das dad a sdkj hasjkhdkjahdjk ahd hajskdh ajkshd asd as asd asd asd asd asd asd as das dad a </p>
-            </div>
-         </div>
-      </section> -->
     <footer id="contact-me">
         <div class="title">
             <h2>Get In Touch</h2>
@@ -275,14 +196,10 @@
                 <a href="mailto:svanidze.nikoloz@gmail.com" target="_blank" Author="flaticon.com"><img src="images/email.svg" alt="" width='40' height='40'></a>
             </div>
         </div>
-        <div>
-            <p>All rights reserved</p>
-        </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src='javascripts/script.js'></script>
     <script src='javascripts/percentageCyrcle.js'></script>
-
 </body>
 
 </html>
