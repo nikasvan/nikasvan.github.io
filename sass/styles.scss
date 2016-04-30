@@ -193,7 +193,10 @@
               font-size: 66px;
               color: $dark-grey;
               @media screen and (max-width: $breakpoint-mobile) {
-                  font-size: 32px;
+                  font-size: 38px;
+              }
+              @media screen and (max-width: $breakpoint-small-mobile) {
+                  font-size: 18px;
               }
           }
           h2 {
@@ -204,6 +207,9 @@
               font-size: 24px;
               @media screen and (max-width: $breakpoint-mobile) {
                   font-size: 18px;
+              }
+              @media screen and (max-width: $breakpoint-small-mobile) {
+                  font-size: 14px;
               }
           }
           .main-title {
@@ -286,7 +292,8 @@
                               line-height: 2em;
                           }
                           @media screen and (max-width: $breakpoint-small-mobile) {
-                              font-size: 10px;
+                              font-size: 15px;
+
                           }
                       }
                   }
@@ -643,17 +650,24 @@
               border: 0;
           }
           .social {
-              width: 318px;
               height: auto;
-              margin: 0 auto;
+              text-align: center;
               a {
                   padding-right: 15px;
                   &:first-child {
                       margin-left: 25px;
+                  
                   }
               }
-              img:last-child {
+              
+              img{
+                &:last-child {
                   border-radius: 50%;
+              }
+                 @media screen and (max-width: $breakpoint-small-mobile) {
+                  width:20px;
+                  height: 20px;
+              }
               }
           }
       }

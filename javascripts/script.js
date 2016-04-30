@@ -3,7 +3,7 @@ $(document).ready(function($) {
     //Preloader
     setTimeout(function(){
         $('body').addClass('loaded');
-    }, 4000);
+    }, 3000);
 
     //Menu scrollTo
     $('.menu').find('ul a').on('click', function(e) {
@@ -76,42 +76,4 @@ context.stroke();
 
 
 
-//Canvas Of My Body
-var myStickman = document.getElementById("my-body");
-var context = myStickman.getContext('2d');
 
-context.strokeStyle = "#1e90ff";
-
-context.moveTo(150, 0);
-context.lineTo(150, 65);
-context.stroke();
-
-
-context.moveTo(150, 30);
-context.lineTo(200, 15);
-context.stroke();
-
-
-context.moveTo(150, 30);
-context.lineTo(100, 15);
-context.stroke()
-
-
-context.moveTo(150, 65);
-context.lineTo(200, 80);
-context.stroke();
-
-
-context.moveTo(150, 65);
-context.lineTo(100, 80);
-context.stroke();
-
-
-context.moveTo(210, 75);
-context.lineTo(200, 80);
-context.stroke();
-
-
-context.moveTo(90, 75);
-context.lineTo(100, 80);
-context.stroke();
