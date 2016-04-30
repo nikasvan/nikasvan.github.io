@@ -1211,11 +1211,6 @@ footer .social a {
   padding-right: 15px;
 }
 /* line 674, ../sass/styles.scss */
-footer .social a #medium {
-                      background-color: #1e90ff;
-                      border-radius: 50%;
-                  }
-
 footer .social a:first-child {
   margin-left: 25px;
 }
