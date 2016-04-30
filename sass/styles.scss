@@ -178,6 +178,10 @@
                       -o-transition: all 0.3s ease-in-out;
                       -ms-transition: all 0.3s ease-in-out;
                       transition: all 0.3s ease-in-out;
+                      @media screen and (max-width: $breakpoint-small-mobile) {
+                          font-size: 10px;
+                          text-align: center;
+                      }
                       &:hover {
                           color: $dark-grey;
                           text-shadow: 0px 0px 0px $dark-grey;
@@ -267,8 +271,8 @@
                       z-index: 10;
                       transition: transform 0.4s;
                   }
-                  a{
-                    color: $dark-grey;
+                  a {
+                      color: $dark-grey;
                   }
                   .caption {
                       opacity: 0;
@@ -293,7 +297,7 @@
                           }
                           @media screen and (max-width: $breakpoint-small-mobile) {
                               font-size: 15px;
-
+                              line-height:1.7em;
                           }
                       }
                   }
@@ -343,6 +347,17 @@
           }
       }
       
+
+      .my-skills {
+          height: 350px;
+          @media screen and (max-width: $breakpoint-tablet) {
+
+              height: 500px;
+          }
+          @media screen and (max-width: $breakpoint-small-mobile) {
+              height: 700px;
+          }
+        }
       .skills-nav {
           ul {
               text-align: center;
@@ -365,50 +380,52 @@
           }
       }
       
-      .skills-nav {
-          text-align: center;
-          #skills-wrapper {
-              margin-bottom: 50px;
-              #skills-container {
-                  .skill-item-container {
-                      display: inline-block;
-                      margin-right: 50px;
-                      margin-top: 30px;
-                      /*&:nth-child(4n) {
+          .skills-nav {
+              text-align: center;
+              #skills-wrapper {
+                  /*margin-bottom: 50px;*/
+                  /*height: 200px;*/
+                  #skills-container {
+                      .skill-item-container {
+                          display: inline-block;
+                          margin-right: 50px;
+                          margin-top: 30px;
+                          /*&:nth-child(4n) {
                       margin-right: 0;
                   }*/
-                      @media screen and (max-width: $breakpoint-desktop) {
-                          margin-right: 2.5em;
+                          @media screen and (max-width: $breakpoint-desktop) {
+                              margin-right: 2.5em;
+                          }
+                          @media screen and (max-width: $breakpoint-tablet) {
+                              margin: 1em 5em;
+                          }
+                          @media screen and (max-width: $breakpoint-mobile) {
+                              margin: 0.5em 1em;
+                          }
+                          .item-title {
+                              text-align: center;
+                              margin-bottom: 5px;
+                          }
                       }
-                      @media screen and (max-width: $breakpoint-tablet) {
-                          margin: 1em 5em;
-                      }
-                      @media screen and (max-width: $breakpoint-mobile) {
-                          margin: 0.5em 1em;
-                      }
-                      .item-title {
-                          text-align: center;
-                          margin-bottom: 5px;
-                      }
-                  }
-                  .item-score-background {
-                      display: inline-block;
-                      position: relative;
-                      z-index: -1;
-                      width: 200px;
-                      height: 20px;
-                      border-radius: 5px;
-                      background-color: $water-blue;
-                      text-align: center;
-                      .item-score {
-                          position: absolute;
+                      .item-score-background {
+                          display: inline-block;
+                          position: relative;
+                          z-index: -1;
+                          width: 200px;
+                          height: 20px;
                           border-radius: 5px;
-                          height: inherit;
+                          background-color: $water-blue;
+                          text-align: center;
+                          .item-score {
+                              position: absolute;
+                              border-radius: 5px;
+                              height: inherit;
+                          }
                       }
                   }
               }
           }
-      }
+      
       
       .ten {
           -webkit-animation: tenprogress 2s ease-in-out 0.5s alternate;
@@ -656,18 +673,16 @@
                   padding-right: 15px;
                   &:first-child {
                       margin-left: 25px;
-                  
                   }
               }
-              
-              img{
-                &:last-child {
-                  border-radius: 50%;
-              }
-                 @media screen and (max-width: $breakpoint-small-mobile) {
-                  width:20px;
-                  height: 20px;
-              }
+              img {
+                  &:last-child {
+                      border-radius: 50%;
+                  }
+                  @media screen and (max-width: $breakpoint-small-mobile) {
+                      width: 20px;
+                      height: 20px;
+                  }
               }
           }
       }
