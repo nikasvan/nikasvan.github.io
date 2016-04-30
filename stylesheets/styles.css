@@ -19,6 +19,7 @@ html {
 /* line 18, ../sass/partials/_normalize.scss */
 body {
   margin: 0;
+  overflow: hidden;
 }
 
 /* HTML5 display definitions
