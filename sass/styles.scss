@@ -667,14 +667,10 @@
           .social {
               height: auto;
               text-align: center;
-              a {
+             a {
                   padding-right: 15px;
                   &:first-child {
                       margin-left: 25px;
-                  }
-                  #medium {
-                      background-color: $sky-blue;
-                      border-radius: 50%;
                   }
               }
               img {
