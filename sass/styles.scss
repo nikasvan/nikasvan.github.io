@@ -674,6 +674,10 @@
                   &:first-child {
                       margin-left: 25px;
                   }
+                  #medium {
+                      background-color: $sky-blue;
+                      border-radius: 50%
+                  }
               }
               img {
                   &:last-child {
