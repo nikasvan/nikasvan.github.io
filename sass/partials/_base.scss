@@ -1,8 +1,15 @@
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
 body {
     font-family: Play;
     font-size: 16px;
     line-height: 1em;
     background: #f4f4f4;
+    overflow: hidden;
+    height: 100%;
 }
 
 * {
