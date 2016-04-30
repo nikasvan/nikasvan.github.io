@@ -3,7 +3,7 @@ $(document).ready(function($) {
     //Preloader
     setTimeout(function(){
         $('body').addClass('loaded');
-        $('html, body').css({ 'overflow': 'auto', 'height': 'auto' });
+        $('body').css('overflow','auto');
     }, 3000);
 
     //Menu scrollTo
