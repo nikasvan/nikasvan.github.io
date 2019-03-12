@@ -1,5 +1,10 @@
 @mixin default-text-color($tc){
 	color: $tc;
 }
-@include font-face("Play", font-files("../fonts/PlayfairDisplay-Regular.ttf"));
-@include font-face("Adam", font-files("../fonts/Adam.otf"));
+
+
+
+// @mixin font-face($font-family, $file-path) {
+//     @include font-face("Adam", font-files("../../fonts/Adam.otf"));
+//     @include font-face("Play", font-files("../../fonts/PlayfairDisplay-Regular.ttf"));
+// }

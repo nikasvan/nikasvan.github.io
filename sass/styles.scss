@@ -1,9 +1,7 @@
-      @import 'compass';
       @import 'partials/variables';
       @import 'partials/normalize';
       @import 'partials/mixins';
       @import 'partials/base';
-      @import 'compass/css3';
       .sec {
           width: 100vw;
           height: auto;
@@ -14,6 +12,9 @@
           width: 80%;
           margin: 0 auto;
           position: relative;
+          @media screen and (max-width: $breakpoint-mobile) {
+            width:100%;
+        }
       }
       
       .active {
@@ -102,7 +103,7 @@
           top: 0;
           width: 51%;
           height: 100%;
-          background: $dark-grey;
+          background: #FFFFFF;
           z-index: 1000;
           -webkit-transform: translateX(0);
           -ms-transform: translateX(0);
@@ -146,170 +147,148 @@
               transition: all 0.3s 1s ease-out;
           }
       }
-      
-      .cool-image {
-          position: relative;
-          width: 100vw;
-          height: 100vh;
-          max-width: 100%;
-          background: linear-gradient( rgba(255, 235, 0, 0.52), rgba(30, 213, 255, 0.1)), url("../images/cool-image.jpg") no-repeat center center fixed;
-          background-size: cover;
-          ul {
-              margin: 0;
-              padding: 0;
-              float: right;
-              list-style: none;
-              width: 130px;
-              font-family: Adam;
-              li {
-                  cursor: pointer;
-                  font-style: italic;
-                  text-decoration: none;
-                  a {
-                      text-decoration: none;
-                      color: transparent;
-                      display: block;
-                      text-transform: uppercase;
-                      text-shadow: 0px 0px 6px $dark-grey;
-                      padding-top: 20px;
-                      letter-spacing: 1px;
-                      -webkit-transition: all 0.3s ease-in-out;
-                      -moz-transition: all 0.3s ease-in-out;
-                      -o-transition: all 0.3s ease-in-out;
-                      -ms-transition: all 0.3s ease-in-out;
-                      transition: all 0.3s ease-in-out;
-                      @media screen and (max-width: $breakpoint-small-mobile) {
-                          font-size: 10px;
-                          text-align: center;
-                      }
-                      &:hover {
-                          color: $dark-grey;
-                          text-shadow: 0px 0px 0px $dark-grey;
-                          padding-left: 20px;
-                      }
-                  }
-              }
-          }
-          h1 {
-              margin: 0;
-              text-align: center;
-              font-style: italic;
-              font-size: 66px;
-              color: $dark-grey;
-              @media screen and (max-width: $breakpoint-mobile) {
-                  font-size: 38px;
-              }
-              @media screen and (max-width: $breakpoint-small-mobile) {
-                  font-size: 18px;
-              }
-          }
-          h2 {
-              margin: 0;
-              text-align: center;
-              font-style: italic;
-              color: $dark-grey;
-              font-size: 24px;
-              @media screen and (max-width: $breakpoint-mobile) {
-                  font-size: 18px;
-              }
-              @media screen and (max-width: $breakpoint-small-mobile) {
-                  font-size: 14px;
-              }
-          }
-          .main-title {
-              position: absolute;
-              top: 35%;
-              left: 32%;
-              line-height: initial;
-          }
+
+      .main-section {
+        text-align: center;
+        height: 450px;
+        width: 100%;
+        background-color: $sky-blue;
+        .main-title {
+            padding-top: 140px;
+            h1 {
+                margin: 0;
+                text-align: center;
+                font-size: 4rem;
+                font-weight: 300;
+                color: #FFFFFF;
+                margin-bottom: -10px;
+            }
+            h2 {
+                margin: 0;
+                text-align: center;
+                color: #FFFFFF;
+                font-size: 1.3rem;
+                font-weight: 300;
+                margin-top: -40px;
+            }
+        }
       }
       
       .title {
           h2 {
               text-align: center;
-              font-size: 30pt;
+              font-size: 2.25rem;
+              font-weight: 500;
               color: $dark-grey;
+              @media screen and (max-width: $breakpoint-mobile) {
+                margin-bottom: 80px;
+            }
           }
       }
       
-      .projects {
-          background-color: $light-blue;
-      }
-      
       .myProjects-details {
+        width: 75%;
+        margin: 0 auto;
           ul {
               list-style: none;
               line-height: 0em;
               padding: 0;
               margin: 0;
               li {
-                  width: 49%;
-                  height: 100%;
-                  overflow: hidden;
-                  display: inline-block;
-                  margin-bottom: 10px;
-                  &:hover {
-                      background-color: $sky-blue;
-                  }
-                  @media screen and (max-width: $breakpoint-mobile) {
-                      width: 100%;
-                      display: block;
-                      margin: 0 auto 20px;
-                  }
+                height: 265px;
+                &:first-child {
+                    height: 220px;
+                    @media screen and (max-width: $breakpoint-mobile) {
+                        height: auto;
+                         
+                    }
+                }
+                &:last-child {
+                    @media screen and (max-width: $breakpoint-mobile) {
+                        margin-bottom: 0px;
+                    }
+                }
+                @media screen and (max-width: $breakpoint-mobile) {
+                    height: auto;
+                    margin-bottom: 60px;
+                }
               }
               .proj-wrapper {
-                  font-family: Adam;
-                  font-style: italic;
-                  position: relative;
-                  display: inline-block;
-                  cursor: pointer;
-                  transition: transform 0.4s, opacity 0.4s;
-                  &:hover {
-                      transform: translateY(0px) translateX(5px) scale(0.9);
-                      -ms-transform: translateY(0px) translateX(5px) scale(0.9);
-                      -webkit-transform: translateY(0px) translateX(5px) scale(0.9);
-                      z-index: 10;
-                      transition: transform 0.4s;
-                  }
-                  a {
-                      color: $dark-grey;
-                  }
-                  .caption {
-                      opacity: 0;
-                      bottom: 0;
-                      left: 0;
-                      top: 0;
-                      right: 0;
-                      text-align: center;
-                      position: absolute;
-                      &:hover {
-                          opacity: 1;
-                          background-color: rgba(255, 255, 255, 0.5);
-                          transition: all 0.5s ease-in-out;
-                      }
-                      h5 {
-                          font-size: 23px;
-                          ;
-                          line-height: 3.5em;
-                          @media screen and (max-width: $breakpoint-tablet) {
-                              font-size: 20px;
-                              line-height: 2em;
-                          }
-                          @media screen and (max-width: $breakpoint-small-mobile) {
-                              font-size: 15px;
-                              line-height: 1.7em;
-                          }
-                      }
-                  }
-                  img {
-                      width: 100%;
-                      height: auto;
-                  }
+                align-items: center;
+                position: relative;
+                display: flex;
+                height: 100%;
+                .proj-img-wrapper {
+                    height: 140px;
+                    display: flex;
+                    flex: 1 0 40%;
+                    padding: 0 20px;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        background-color: #C5C5C5;
+                        padding: 0 20px;
+                        border-radius: 5px;
+                        max-width: 420px;
+                        max-height: 140px;
+                        object-fit: contain;
+                        padding: 10px;
+                        @media screen and (max-width: $breakpoint-mobile) {
+                            width: 240px;
+                        }
+                    }
+                @media screen and (max-width: $breakpoint-mobile) {
+                    margin-bottom: 15px;
+                }
+                }
+                .proj-text-wrapper {
+                    height: 140px;
+                    display: flex;
+                    flex: 1 0 60%;
+                    flex-direction: column;
+                    padding: 0 20px;
+                    h4 {
+                        color:#000000;
+                        font-size: 1.25rem;
+                        font-weight: 500;
+                        margin-top: -5px;
+                        margin-bottom: 5px;
+                        word-break: break-word;
+                        white-space: normal;
+                        line-height: normal;
+                        @media screen and (max-width: $breakpoint-mobile) {
+                            text-align: center;
+                            margin-top: 10px;
+                        }
+                    }
+                    p {
+                        color:#333333;
+                        word-break: break-word;
+                        white-space: normal;
+                        line-height: 150%;
+                        @media screen and (max-width: $breakpoint-mobile) {
+                            
+                            text-align: center;
+                        }
+                    }
+                @media screen and (max-width: $breakpoint-mobile) {
+                    height: auto;
+                }
+                }
+                @media screen and (max-width: $breakpoint-mobile) {
+                    flex-direction: column;
+                    margin-bottom: 60px;
+                    &:last-child {
+                        margin-bottom: 0px;
+                        padding-bottom: 30px
+                    }
+                }
               }
           }
       }
       
       .about-me {
+          background-color: #FFFFFF;
           .my-image {
               padding-top: 50px;
               text-align: center;
@@ -336,337 +315,33 @@
               margin: 0 auto;
               line-height: 1.5em;
               width: 55%;
-              font-size: 18px;
+              font-size: 1.125rem;
               color: $black;
               text-align: center;
-              font-style: italic;
-              @media screen and (max-width: $breakpoint-small-mobile) {
-                  font-size: 14px;
+              font-weight: 500;
+              padding-bottom: 20px;
+              p {
+                  margin-top: 0;
+              }
+              @media screen and (max-width: $breakpoint-mobile) {
                   width: 100%;
+                  padding: 0 10px 50px 10px;
               }
-          }
-      }
-      
-      .my-skills {
-          height: 350px;
-          @media screen and (max-width: $breakpoint-tablet) {
-              height: 500px;
-          }
-          @media screen and (max-width: $breakpoint-small-mobile) {
-              height: 700px;
-          }
-      }
-      
-      .skills-nav {
-          ul {
-              text-align: center;
-              list-style: none;
-              font-size: 20pt;
-              li {
-                  display: inline-block;
-                  padding: 10px;
-                  border-radius: 8px;
-                  a {
-                      text-decoration: none;
-                      position: relative;
-                      margin: 0 1em;
-                      text-align: center;
-                      color: $greyish;
-                      font-style: italic;
-                      transition: color 0.3s;
-                  }
-              }
-          }
-      }
-      
-      .skills-nav {
-          text-align: center;
-          #skills-wrapper {
-              /*margin-bottom: 50px;*/
-              /*height: 200px;*/
-              #skills-container {
-                  .skill-item-container {
-                      display: inline-block;
-                      margin-right: 50px;
-                      margin-top: 30px;
-                      /*&:nth-child(4n) {
-                      margin-right: 0;
-                  }*/
-                      @media screen and (max-width: $breakpoint-desktop) {
-                          margin-right: 2.5em;
-                      }
-                      @media screen and (max-width: $breakpoint-tablet) {
-                          margin: 1em 5em;
-                      }
-                      @media screen and (max-width: $breakpoint-mobile) {
-                          margin: 0.5em 1em;
-                      }
-                      .item-title {
-                          text-align: center;
-                          margin-bottom: 5px;
-                      }
-                  }
-                  .item-score-background {
-                      display: inline-block;
-                      position: relative;
-                      z-index: -1;
-                      width: 200px;
-                      height: 20px;
-                      border-radius: 5px;
-                      background-color: $water-blue;
-                      text-align: center;
-                      .item-score {
-                          position: absolute;
-                          border-radius: 5px;
-                          height: inherit;
-                      }
-                  }
-              }
-          }
-      }
-      
-      .ten {
-          -webkit-animation: tenprogress 2s ease-in-out 0.5s alternate;
-          animation: tenprogress 2s ease-in-out 0.5s alternate;
-          -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-      }
-      
-      @-webkit-keyframes tenprogress {
-          from {
-              background-color: $water-blue;
-              width: 1px;
-              visibility: visible;
-          }
-          to {
-              background-color: $sky-blue;
-              width: 200px;
-              visibility: visible;
-          }
-      }
-      
-      @-moz-keyframes tenprogress {
-          from {
-              background-color: $water-blue;
-              width: 1px;
-              visibility: visible;
-          }
-          to {
-              background-color: $sky-blue;
-              width: 200px;
-              visibility: visible;
-          }
-      }
-      
-      .nine {
-          -webkit-animation: nineprogress 2s ease-in-out 0.5s alternate;
-          animation: nineprogress 2s ease-in-out 0.5s alternate;
-          -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-      }
-      
-      @-webkit-keyframes nineprogress {
-          from {
-              background-color: $water-blue;
-              width: 1px;
-              visibility: visible;
-          }
-          to {
-              background-color: $sky-blue;
-              width: 180px;
-              visibility: visible;
-          }
-      }
-      
-      @-moz-keyframes nineprogress {
-          from {
-              background-color: $water-blue;
-              width: 1px;
-              visibility: visible;
-          }
-          to {
-              background-color: $sky-blue;
-              width: 180px;
-              visibility: visible;
-          }
-      }
-      
-      .eight {
-          -webkit-animation: eightprogress 2s ease-in-out 0.5s alternate;
-          animation: eightprogress 2s ease-in-out 0.5s alternate;
-          -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-      }
-      
-      @-webkit-keyframes eightprogress {
-          from {
-              background-color: $water-blue;
-              width: 1px;
-              visibility: visible;
-          }
-          to {
-              background-color: $sky-blue;
-              width: 160px;
-              visibility: visible;
-          }
-      }
-      
-      @-moz-keyframes eightprogress {
-          from {
-              background-color: $water-blue;
-              width: 1px;
-              visibility: visible;
-          }
-          to {
-              background-color: $sky-blue;
-              width: 160px;
-              visibility: visible;
-          }
-      }
-      
-      .seven {
-          -webkit-animation: sevenprogress 2s ease-in-out 0.5s alternate;
-          animation: sevenprogress 2s ease-in-out 0.5s alternate;
-          -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-      }
-      
-      @-webkit-keyframes sevenprogress {
-          from {
-              background-color: $water-blue;
-              width: 1px;
-              visibility: visible;
-          }
-          to {
-              background-color: $sky-blue;
-              width: 140px;
-              visibility: visible;
-          }
-      }
-      
-      @-moz-keyframes sevenprogress {
-          from {
-              background-color: $water-blue;
-              width: 1px;
-              visibility: visible;
-          }
-          to {
-              background-color: $sky-blue;
-              width: 140px;
-              visibility: visible;
-          }
-      }
-      
-      .six {
-          -webkit-animation: sixprogress 2s ease-in-out 0.5s alternate;
-          animation: sixprogress 2s ease-in-out 0.5s alternate;
-          -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-      }
-      
-      @-webkit-keyframes sixprogress {
-          from {
-              background-color: $water-blue;
-              width: 1px;
-              visibility: visible;
-          }
-          to {
-              background-color: $sky-blue;
-              width: 125px;
-              visibility: visible;
-          }
-      }
-      
-      @-moz-keyframes sixprogress {
-          from {
-              background-color: $water-blue;
-              width: 1px;
-              visibility: visible;
-          }
-          to {
-              background-color: $sky-blue;
-              width: 125px;
-              visibility: visible;
-          }
-      }
-      
-      .five {
-          -webkit-animation: fiveprogress 2s ease-in-out 0.5s alternate;
-          animation: fiveprogress 2s ease-in-out 0.5s alternate;
-          -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-      }
-      
-      @-webkit-keyframes fiveprogress {
-          from {
-              background-color: $water-blue;
-              width: 1px;
-              visibility: visible;
-          }
-          to {
-              background-color: $sky-blue;
-              width: 100px;
-              visibility: visible;
-          }
-      }
-      
-      @-moz-keyframes fiveprogress {
-          from {
-              background-color: $water-blue;
-              width: 1px;
-              visibility: visible;
-          }
-          to {
-              background-color: $sky-blue;
-              width: 100px;
-              visibility: visible;
-          }
-      }
-      
-      .four {
-          -webkit-animation: fourprogress 2s ease-in-out 0.5s alternate;
-          animation: fourprogress 2s ease-in-out 0.5s alternate;
-          -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-      }
-      
-      @-webkit-keyframes fourprogress {
-          from {
-              background-color: $water-blue;
-              width: 1px;
-              visibility: visible;
-          }
-          to {
-              background-color: $sky-blue;
-              width: 80px;
-              visibility: visible;
-          }
-      }
-      
-      @-moz-keyframes fourprogress {
-          from {
-              background-color: $water-blue;
-              width: 1px;
-              visibility: visible;
-          }
-          to {
-              background-color: $sky-blue;
-              width: 80px;
-              visibility: visible;
           }
       }
       
       footer {
           width: 100%;
-          height: 160px;
-          border-top: 1px solid $sky-blue;
-          background-color: $light-blue;
-          .title {
-              border: 0;
-          }
+          background-color: #FFFFFF;
+          border-bottom: 1px solid $sky-blue;
+          padding-bottom: 30px;
           .social {
               height: auto;
               text-align: center;
+              #medium {
+                background-color: $sky-blue;
+                border-radius: 50%
+            }
              a {
                   padding-right: 15px;
                   &:first-child {
@@ -679,9 +354,9 @@
                       border-radius: 50%;
                   }
                   
-                  @media screen and (max-width: $breakpoint-small-mobile) {
-                      width: 20px;
-                      height: 20px;
+                  @media screen and (max-width: $breakpoint-mobile) {
+                      width: 30px;
+                      height: 30px;
                   }
               }
           }

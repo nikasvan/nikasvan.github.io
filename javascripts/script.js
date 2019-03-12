@@ -25,7 +25,7 @@ $(document).ready(function($) {
         var url = this.href;
         $('.skills-nav li').removeAttr("style");
         $('.skills-nav li').removeClass("active");
-        $(this).parent().css("background-color", "#1e90ff");
+        $(this).parent().css("background-color", "#2098D1");
 
         //skills AJAX
         $('#skills-container ').remove();
@@ -38,7 +38,7 @@ $(document).ready(function($) {
     var myStickman = document.getElementById("my-body");
     var context = myStickman.getContext('2d');
 
-    context.strokeStyle = "#1e90ff";
+    context.strokeStyle = "#2098D1";
 
     context.moveTo(150, 0);
     context.lineTo(150, 65);
