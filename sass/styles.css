@@ -445,10 +445,6 @@ p {
   }
 }
 
-.active {
-  background-color: #2098D1;
-}
-
 .main-section {
   text-align: center;
   height: 450px;
@@ -465,7 +461,7 @@ p {
   text-align: center;
   font-size: 4rem;
   font-weight: 300;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: -10px;
 }
 
@@ -478,7 +474,7 @@ p {
 .main-section .main-title div p {
   margin: 0;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.1rem;
   font-weight: 300;
   margin-top: -10px;
@@ -558,10 +554,14 @@ p {
   padding: 0 20px;
 }
 
-.myProjects-details ul .proj-wrapper .proj-img-wrapper img {
+.myProjects-details ul .proj-wrapper .proj-img-wrapper a {
+  cursor: pointer;
+}
+
+.myProjects-details ul .proj-wrapper .proj-img-wrapper a img {
   width: 100%;
-  height: auto;
-  background-color: #C5C5C5;
+  height: 100%;
+  background-color: #c5c5c5;
   padding: 0 20px;
   border-radius: 5px;
   max-width: 420px;
@@ -572,7 +572,7 @@ p {
 }
 
 @media screen and (max-width: 1000px) {
-  .myProjects-details ul .proj-wrapper .proj-img-wrapper img {
+  .myProjects-details ul .proj-wrapper .proj-img-wrapper a img {
     width: 240px;
   }
 }
@@ -650,7 +650,7 @@ p {
 }
 
 .about-me {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .about-me .my-image {
@@ -701,7 +701,7 @@ p {
 
 footer {
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-bottom: 1px solid #2098D1;
   padding-bottom: 30px;
 }
