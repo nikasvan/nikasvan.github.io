@@ -556,6 +556,8 @@ p {
 
 .myProjects-details ul .proj-wrapper .proj-img-wrapper a {
   cursor: pointer;
+  width: 100%;
+  height: 100%;
 }
 
 .myProjects-details ul .proj-wrapper .proj-img-wrapper a img {
